@@ -1,3 +1,10 @@
+@font-face {
+  font-family: '10Pixel';
+  src: url('../fonts/10Pixel-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 :root {
   --bg: #0d0f14;
   --bg2: #13161e;
@@ -47,10 +54,11 @@ nav {
   border-bottom: 1px solid var(--border);
 }
 .nav-logo {
-  font-family: "Playfair Display", serif;
+  font-family: '10Pixel', sans-serif;
   font-size: 1.1rem;
   color: var(--accent);
   letter-spacing: 0.05em;
+  text-shadow: 0 0 10px rgba(200, 169, 110, 0.8);
 }
 .nav-links {
   display: flex;
@@ -121,15 +129,17 @@ nav {
   animation: fadeUp 0.8s 0.2s forwards;
 }
 .hero-name {
-  font-family: "Playfair Display", serif;
+  font-family: '10Pixel', sans-serif;
   font-size: clamp(3rem, 7vw, 6rem);
   font-weight: 900;
   line-height: 1.05;
   opacity: 0;
   animation: fadeUp 0.8s 0.4s forwards;
+  text-shadow: 0 0 15px rgba(232, 230, 224, 0.2);
 }
 .hero-name span {
   color: var(--accent);
+  text-shadow: 0 0 15px rgba(200, 169, 110, 0.6);
 }
 .hero-phrase {
   margin-top: 1.8rem;
@@ -234,11 +244,12 @@ section {
   margin-bottom: 1rem;
 }
 .section-title {
-  font-family: "Playfair Display", serif;
+  font-family: '10Pixel', sans-serif;
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 1rem;
+  text-shadow: 0 0 12px rgba(232, 230, 224, 0.2);
 }
 .section-divider {
   width: 50px;
@@ -295,10 +306,11 @@ section {
   transform: translateY(-4px);
 }
 .stat-num {
-  font-family: "Playfair Display", serif;
+  font-family: '10Pixel', sans-serif;
   font-size: 2.2rem;
   color: var(--accent);
   font-weight: 700;
+  text-shadow: 0 0 15px rgba(200, 169, 110, 0.5);
 }
 .stat-label {
   font-size: 0.8rem;
@@ -402,7 +414,7 @@ section {
   transform: scaleX(1);
 }
 .project-num {
-  font-family: "Playfair Display", serif;
+  font-family: '10Pixel', sans-serif;
   font-size: 3rem;
   font-weight: 900;
   color: var(--border);
@@ -410,10 +422,11 @@ section {
   user-select: none;
 }
 .project-title {
-  font-family: "Playfair Display", serif;
+  font-family: '10Pixel', sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--text);
+  text-shadow: 0 0 10px rgba(232, 230, 224, 0.2);
 }
 .project-desc {
   font-size: 0.9rem;
