@@ -10,5 +10,5 @@
 
 ## Mejoras Visuales y Funcionales
 
-- [ ] Agregar fotografía de perfil.
+- [x] Agregar fotografía de perfil.
 - [x] Añadir en cada proyecto un botón "Demo" que enlace a un video de su funcionamiento.

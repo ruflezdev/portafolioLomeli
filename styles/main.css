@@ -268,6 +268,34 @@ section {
   gap: 5rem;
   align-items: start;
 }
+.profile-photo-container {
+  margin-bottom: 2rem;
+  display: inline-block;
+  position: relative;
+}
+.profile-photo-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  transform: translate(8px, 8px);
+  z-index: 0;
+  transition: transform 0.3s ease;
+}
+.profile-photo-container:hover::after {
+  transform: translate(4px, 4px);
+}
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border: 2px solid var(--bg2);
+}
 .about-text p {
   color: var(--muted);
   margin-bottom: 1.2rem;
